@@ -1,3 +1,17 @@
+function inputitems(){
+    localStorage["item1input"] = document.getElementById("item1input").value; 
+    localStorage["item1name"] = document.getElementById("item1").innerHTML;
+
+    localStorage["item2input"] = document.getElementById("item2input").value; 
+    localStorage["item2name"] = document.getElementById("item2").innerHTML;
+
+    localStorage["item3input"] = document.getElementById("item3input").value; 
+    localStorage["item3name"] = document.getElementById("item3").innerHTML;
+}
+
+
+
+
 
 function setitem1() {
     var x1 = document.getElementById("item1input").value;
@@ -141,3 +155,4 @@ function settingsbuttonshow1(){
 function settingsbuttonhide1(){
     document.getElementById("settingsbutton1").style.visibility = "hidden";
 }
+
