@@ -101,18 +101,7 @@ setInterval(function() {
 
 }, 1000);
 
-function setitems(){
-    // fuction that is saving the innerHTML of the div
-    localStorage["item1"] = document.getElementById("item1").innerHTML; // heading div
-    localStorage["item2"] = document.getElementById("item2").innerHTML; // content div
-    localStorage["item3"] = document.getElementById("item3").innerHTML; // content div
-  
-    localStorage["item1input"] = document.getElementById("item1input").value; 
-    localStorage["item2input"] = document.getElementById("item2input").value; 
-    localStorage["item3input"] = document.getElementById("item3input").value; 
-  
-  
-  };
+
 
 
 
