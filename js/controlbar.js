@@ -183,12 +183,3 @@ function settingsbuttonhide1(){
     document.getElementById("settingsbutton1").style.visibility = "hidden";
 }
 
-function clear(){
-    localStorage.clear();
-    location.reload();
-
-  }
-
-function cleared(){
-    alert("Clearing data");
-}

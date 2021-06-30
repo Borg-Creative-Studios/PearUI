@@ -29,7 +29,7 @@
 
 </header>
 
-<body onload="findheight(), hidesettings(), saveitems()">
+<body onload="findheight(), hidesettings()">
     <center><embed class="appwindow" height="" id="appwindow" src="./myhome.html" type=""></center>
 </body>
 
@@ -60,8 +60,10 @@
 <footer><div id="controlbar"><span class="pn_s" id="version">v: 1.0.0a</span> 
     
     <span><button class="baritem" onclick="gohome(), inputheight();"><img src="./icons/home.svg" height="20px" alt=""></button></span>  
-    <span><button class="baritem" onclick="clear(), inputitems(), cleared() ;"><img src="./icons/trash.svg" height="20px" alt=""></button></span>  
+
     <span><button class="baritem" onclick="inputheight();"><img src="./icons/size.svg" height="20px" alt=""></button></span>  
+    <span><button class="baritem" onclick="inputitems();"><img src="./icons/refresh.svg" height="20px" alt=""></button></span>  
+
     <span><button id="settingsbutton1" class="baritem" onclick="showsettings(), settingsbuttonhide1(), settingsbuttonshow2()"><img src="./icons/settings.svg" height="20px" alt=""></button></span>      
     <span><button style="visibility: hidden;" id="settingsbutton2" class="baritem" onclick="hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()""><img src="./icons/settings.svg" height="20px" alt=""></button></span>      
 
