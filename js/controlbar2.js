@@ -22,7 +22,7 @@ document.getElementById("item1name").value =
   document.getElementById("item2").innerHTML =
   localStorage["item2"] || ""; // 
 
-  document.getElementById("item1inpu2").value =
+  document.getElementById("item1input2").value =
   localStorage["item2input"] || ""; // 
 
   document.getElementById("item2link").href =
@@ -61,10 +61,10 @@ function openitem1(){
 }
 
 function openitem2(){
-  var z1 = document.getElementById("item2input").value;
+  var z2 = document.getElementById("item2input").value;
   
   
-  document.getElementById("appwindow").src = z1;
+  document.getElementById("appwindow").src = z2;
   console.log(x1)
   
   
