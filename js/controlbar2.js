@@ -14,8 +14,6 @@ document.getElementById("item1name").value =
   
 
 
-
-
   document.getElementById("item2name").value =
   localStorage["item2name"] || ""; // 
 
@@ -46,8 +44,43 @@ setInterval(function() {
 
 function save1(){
   document.getElementById("item1").innerHTML = document.getElementById("item1name").value;
-  document.getElementById("item2").innerHTML = document.getElementById("item2name").value;
+  localStorage.setItem("item1name", document.getElementById("item1name").value);
 
+  localStorage["item1input"] = document.getElementById("item1input").value; // 
+  localStorage.setItem("item1input", document.getElementById("item1input").value);
+
+
+  localStorage["item1input"] = document.getElementById("item1link").href; // 
+  localStorage.setItem("item1input", document.getElementById("item1link").href);
+
+
+
+}
+
+function save2(){
+  document.getElementById("item2").innerHTML = document.getElementById("item2name").value;
+  localStorage.setItem("item2name", document.getElementById("item2name").value);
+
+  localStorage["item2input"] = document.getElementById("item2input").value; // 
+  localStorage.setItem("item2input", document.getElementById("item2input").value);
+
+
+  localStorage["item2input"] = document.getElementById("item2link").href; // 
+  localStorage.setItem("item2input", document.getElementById("item2link").href);
+
+
+
+}
+
+function loaddata(){
+  document.getElementById("item1").innerHTML = localStorage["item1name"]
+  document.getElementById("item2").innerHTML = localStorage["item2name"]
+
+  document.getElementById("item1name").value = localStorage["item1name"]
+  document.getElementById("item2name").value = localStorage["item2name"]
+
+  document.getElementById("item1input").value = localStorage["item1input"]
+  document.getElementById("item2input").value = localStorage["item2input"]
 }
 
 function openitem1(){
