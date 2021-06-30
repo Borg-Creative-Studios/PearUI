@@ -105,3 +105,13 @@ function openapp2(){
   
   
 }
+
+function openapp3(){
+  var z2 = document.getElementById("app2input").value;
+  
+  
+  document.getElementById("appwindow").src = z2;
+  console.log(x1)
+  
+  
+}
