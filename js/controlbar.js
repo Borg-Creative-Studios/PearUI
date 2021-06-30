@@ -1,20 +1,9 @@
 document.getElementById("item1").innerHTML =
   localStorage["item1name"] || ""; // default text
 
-document.getElementById("item2").innerHTML =
-  localStorage["item2name"] || ""; // default text
-
-  document.getElementById("item3").innerHTML =
-    localStorage["item3name"] || ""; // default text
-
     document.getElementById("item1input").value =
   localStorage["item1input"] || ""; 
 
-document.getElementById("item2input").value =
-  localStorage["item2input"] || ""; 
-
-  document.getElementById("item3input").value =
-    localStorage["item3input"] || ""; 
 
 
 
@@ -23,22 +12,12 @@ function inputitems(){
     localStorage["item1input"] = document.getElementById("item1input").value; 
     localStorage["item1name"] = document.getElementById("item1").innerHTML;
 
-    localStorage["item2input"] = document.getElementById("item2input").value; 
-    localStorage["item2name"] = document.getElementById("item2").innerHTML;
-
-    localStorage["item3input"] = document.getElementById("item3input").value; 
-    localStorage["item3name"] = document.getElementById("item3").innerHTML;
 }
 
 function saveitems(){
     document.getElementById("item1input").value = localStorage["item1input"]; 
     document.getElementById("item1").innerHTML = localStorage["item1name"];
 
-    document.getElementById("item2input").value = localStorage["item2input"]; 
-    document.getElementById("item2").innerHTML = localStorage["item2name"];
-
-    document.getElementById("item3input").value = localStorage["item3input"]; 
-    document.getElementById("item3").innerHTML = localStorage["item3name"];
 }
 
 
@@ -67,60 +46,6 @@ function setitem1() {
     
     
 }
-
-
-
-
-
-
-
-function setitem2() {
-    var x2 = document.getElementById("item2input").value;
-    
-    localStorage["item2input"] = document.getElementById("item2input").value; 
-  }
-
-  function setitem2name() {
-    var y2 = document.getElementById("item2name").value;
-    document.getElementById("item2").innerHTML = y2;
-
-    localStorage["item2name"] = document.getElementById("item2").innerHTML; // heading div
-    localStorage["item2name"] = document.getElementById("item2name").value;
-  }
-  function openitem2(){
-    var z2 = document.getElementById("item2input").value;
-    
-    document.getElementById("appwindow").src = z2;
-    console.log(x2)
-    
-}
-
-
-
-
-
-
-
-function setitem3() {
-    var x3 = document.getElementById("item3input").value;
-    
-    localStorage["item3input"] = document.getElementById("item3input").value; 
-  }
-
-  function setitem3name() {
-    var y3 = document.getElementById("item3name").value;
-    document.getElementById("item3").innerHTML = y3;
-
-    localStorage["item3name"] = document.getElementById("item3").innerHTML; // heading div
-    localStorage["item3name"] = document.getElementById("item3name").value;
-  }
-  function openitem3(){
-    var z3 = document.getElementById("item3input").value;
-    
-    document.getElementById("appwindow").src = z3;
-    console.log(x3)
-    
-}
 /*document.getElementById("item1").href = x;*/
 
 
@@ -133,16 +58,10 @@ function setitem3() {
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
   localStorage["item1name"] = document.getElementById("item1").innerHTML; // heading div
-  localStorage["item2name"] = document.getElementById("item2").innerHTML; // content div
-  localStorage["item3name"] = document.getElementById("item3").innerHTML; // content div
 
   localStorage["item1name"] = document.getElementById("item1name").value; // heading div
-  localStorage["item2name"] = document.getElementById("item2name").value; // content div
-  localStorage["item3name"] = document.getElementById("item3name").value; // content div 
 
   localStorage["item1input"] = document.getElementById("item1input").value; 
-  localStorage["item2input"] = document.getElementById("item2input").value; 
-  localStorage["item3input"] = document.getElementById("item3input").value; 
 
 
 }, 1000);
