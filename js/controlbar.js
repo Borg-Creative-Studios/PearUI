@@ -1,3 +1,5 @@
+
+
 function inputitems(){
     localStorage["item1input"] = document.getElementById("item1input").value; 
     localStorage["item1name"] = document.getElementById("item1").innerHTML;
@@ -15,13 +17,14 @@ function inputitems(){
 
 function setitem1() {
     var x1 = document.getElementById("item1input").value;
-    
+
     localStorage["item1input"] = document.getElementById("item1input").value; 
   }
 
   function setitem1name() {
     var y1 = document.getElementById("item1name").value;
     document.getElementById("item1").innerHTML = y1;
+
     localStorage["item1name"] = document.getElementById("item1").innerHTML; // heading div
   }
   function openitem1(){
@@ -29,6 +32,7 @@ function setitem1() {
     
     document.getElementById("appwindow").src = z1;
     console.log(x1)
+    
     
 }
 
@@ -47,6 +51,7 @@ function setitem2() {
   function setitem2name() {
     var y2 = document.getElementById("item2name").value;
     document.getElementById("item2").innerHTML = y2;
+
     localStorage["item2name"] = document.getElementById("item2").innerHTML; // heading div
   }
   function openitem2(){
@@ -72,6 +77,7 @@ function setitem3() {
   function setitem3name() {
     var y3 = document.getElementById("item3name").value;
     document.getElementById("item3").innerHTML = y3;
+
     localStorage["item3name"] = document.getElementById("item3").innerHTML; // heading div
   }
   function openitem3(){
@@ -156,3 +162,12 @@ function settingsbuttonhide1(){
     document.getElementById("settingsbutton1").style.visibility = "hidden";
 }
 
+function clear(){
+    localStorage.clear();
+    location.reload();
+
+  }
+
+function cleared(){
+    alert("Clearing data");
+}
