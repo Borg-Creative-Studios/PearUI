@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./main.css" rel="stylesheet">
+<!--JazzBlocksQ Beta Resources-->
+
+<link href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/JazzBlocksQ.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+<!--end-->
+
+<!--JazzBlocks Divided required code-->
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
+<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+<!--end-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pear OS</title>
+
+</head>
+
+<header>
+    <div><h3 class="pn_m">Welcome <span id="welcome"></span></h3></div>
+    
+
+</header>
+
+<body onload="findheight()">
+    <p>Create your user name</p>
+    <input type="text" id="usrnamecreate" placeholder="lifeatbcs" value="">
+    <button onclick=" save1()">SAVE</button>
+
+
+    <div id="controlbarsettings"><h4 class="pn_m">App Settings</h4>
+        <p>App 1</p>
+        <input type="text" id="app1name" placeholder="App name" value="">
+        <input type="text" id="app1input" placeholder="URL or file path" value="">
+        <button onclick=" appsave1()">SAVE</button>
+        <p>App 2</p>
+        <input type="text" id="app2name" placeholder="App name" value="">
+        <input type="text" id="app2input" placeholder="URL or file path" value="">
+        <button onclick=" appsave2()">SAVE</button>
+        <p>App 3</p>
+        <input type="text" id="app3name" placeholder="App name" value="">
+        <input type="text" id="app3input" placeholder="URL or file path" value="">
+        <button onclick=" appsave3()">SAVE</button>
+
+        </div>
+        <span ><a href="./myhome.html"><button  class="baritembutton" >Continue</button></a></span>
+
+</body>
+
+
+
+
+<script src="../js/pearcommands.js"></script>
+<script src="../js/mainappcommands.js"></script>
+<script src="../js/window.js"></script>
+<script src="../js/onboarding.js"></script>
+
+</html>

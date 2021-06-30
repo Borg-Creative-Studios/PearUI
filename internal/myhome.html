@@ -25,18 +25,36 @@
 </head>
 
 <header>
-    <div><h3 class="pn_m">Home</h3></div>
+    <div><h3 class="pn_m">Welcome <span id="welcome"></span></h3></div>
+    <button id="loadbutton" onclick=" loadhome()">Gather my data</button>
 
 </header>
 
+
+
+
+
 <body onload="findheight()">
+
+
+<div style="padding-top: 30px" id="myapps">
+
+    <span ><button id="app1" class="baritembutton"  onclick="openitem1(), inputheight();"></button></span>
+
+
+    <span ><button id="app2" class="baritembutton"  onclick="openitem2(), inputheight();"></button></span>
+
+    <span ><button id="app3" class="baritembutton"  onclick="openitem3(), inputheight();"></button></span>
+</div>
 
 </body>
 
 
 
 
-<script src="./js/pearcommands.js"></script>
-<script src="./js/mainappcommands.js"></script>
-<script src="./js/window.js"></script>
+<script src="../js/pearcommands.js"></script>
+<script src="../js/mainappcommands.js"></script>
+<script src="../js/window.js"></script>
+<script src="../js/onboarding.js"></script>
+<script src="../js/home.js"></script>
 </html>
