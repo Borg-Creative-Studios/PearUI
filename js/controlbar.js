@@ -76,7 +76,7 @@ document.getElementById("item1").innerHTML =
   localStorage["item1"] || ""; // default text
 document.getElementById("item2").innerHTML =
   localStorage["item3"] || ""; // default text
-  document.getElementById("item2").innerHTML =
+  document.getElementById("item3").innerHTML =
     localStorage["item3"] || ""; // default text
 
     document.getElementById("item1input").value =
