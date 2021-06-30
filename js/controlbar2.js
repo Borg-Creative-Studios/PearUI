@@ -4,7 +4,10 @@ document.getElementById("item1name").value =
   document.getElementById("item1").innerHTML =
   localStorage["item1"] || ""; // 
 
-  document.getElementById("item1input").innerHTML =
+  document.getElementById("item1input").value =
+  localStorage["item1input"] || ""; // 
+
+  document.getElementById("item1link").href =
   localStorage["item1input"] || ""; // 
 
 
@@ -13,6 +16,7 @@ setInterval(function() {
   localStorage["item1name"] = document.getElementById("item1name").value; // 
   localStorage["item1"] = document.getElementById("item1").innerHTML; // 
   localStorage["item1input"] = document.getElementById("item1input").value; // 
+  localStorage["item1input"] = document.getElementById("item1link").href; // 
  
 }, 1000);
 
