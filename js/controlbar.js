@@ -8,7 +8,7 @@ function setitem1() {
   function setitem1name() {
     var y1 = document.getElementById("item1name").value;
     document.getElementById("item1").innerHTML = y1;
-    localStorage["item1"] = document.getElementById("item1").innerHTML; // heading div
+    localStorage["item1name"] = document.getElementById("item1").innerHTML; // heading div
   }
   function openitem1(){
     var z1 = document.getElementById("item1input").value;
@@ -33,7 +33,7 @@ function setitem2() {
   function setitem2name() {
     var y2 = document.getElementById("item2name").value;
     document.getElementById("item2").innerHTML = y2;
-    localStorage["item2"] = document.getElementById("item2").innerHTML; // heading div
+    localStorage["item2name"] = document.getElementById("item2").innerHTML; // heading div
   }
   function openitem2(){
     var z2 = document.getElementById("item2input").value;
@@ -58,7 +58,7 @@ function setitem3() {
   function setitem3name() {
     var y3 = document.getElementById("item3name").value;
     document.getElementById("item3").innerHTML = y3;
-    localStorage["item3"] = document.getElementById("item3").innerHTML; // heading div
+    localStorage["item3name"] = document.getElementById("item3").innerHTML; // heading div
   }
   function openitem3(){
     var z3 = document.getElementById("item3input").value;
@@ -94,9 +94,9 @@ document.getElementById("item2input").value =
 
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
-  localStorage["item1"] = document.getElementById("item1").innerHTML; // heading div
-  localStorage["item2"] = document.getElementById("item2").innerHTML; // content div
-  localStorage["item3"] = document.getElementById("item3").innerHTML; // content div
+  localStorage["item1name"] = document.getElementById("item1").innerHTML; // heading div
+  localStorage["item2name"] = document.getElementById("item2").innerHTML; // content div
+  localStorage["item3name"] = document.getElementById("item3").innerHTML; // content div
 
   localStorage["item1input"] = document.getElementById("item1input").value; 
   localStorage["item2input"] = document.getElementById("item2input").value; 
