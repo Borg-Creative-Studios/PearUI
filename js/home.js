@@ -84,34 +84,6 @@ function loadhome(){
   document.getElementById("app2input").value = localStorage["app2input"]
   document.getElementById("app3input").value = localStorage["app3input"]
 
-}
 
-function openapp1(){
-  var z1 = document.getElementById("app1input").value;
-  
-  
-  document.getElementById("appwindow").src = z1;
-  console.log(x1)
-  
-  
-}
-
-function openapp2(){
-  var z2 = document.getElementById("app2input").value;
-  
-  
-  document.getElementById("appwindow").src = z2;
-  console.log(x1)
-  
-  
-}
-
-function openapp3(){
-  var z2 = document.getElementById("app2input").value;
-  
-  
-  document.getElementById("appwindow").src = z2;
-  console.log(x1)
-  
-  
+    
 }
