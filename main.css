@@ -1,0 +1,56 @@
+#menu{
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+#controlbar{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+}
+
+.baritem, a:link, a:visited{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.baritem{
+    border-color: #cecece;
+    border: solid;
+    padding: 2px;
+    border-width: 1px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.baritembutton{
+    border-color: #cecece;
+    border: solid;
+    padding: 4px;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+#version{
+    padding-left: 5px;
+}
+
+.appwindow{
+    width: 100%;
+    min-height: 100px;
+    margin-top: 65px;
+}
+
+#controlbarsettings{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    border-color: #cecece;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 4px;
+}
