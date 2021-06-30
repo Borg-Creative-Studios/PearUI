@@ -1,4 +1,23 @@
+document.getElementById("item1").innerHTML =
+  localStorage["item1"] || ""; // default text
 
+document.getElementById("item2").innerHTML =
+  localStorage["item3"] || ""; // default text
+
+  document.getElementById("item3").innerHTML =
+    localStorage["item3"] || ""; // default text
+
+    document.getElementById("item1input").value =
+  localStorage["item1input"] || ""; 
+
+document.getElementById("item2input").value =
+  localStorage["item2input"] || ""; 
+
+  document.getElementById("item3input").value =
+    localStorage["item3input"] || ""; 
+
+
+    
 
 function inputitems(){
     localStorage["item1input"] = document.getElementById("item1input").value; 
@@ -92,23 +111,7 @@ function setitem3() {
 
 
 
-document.getElementById("item1").innerHTML =
-  localStorage["item1"] || ""; // default text
 
-document.getElementById("item2").innerHTML =
-  localStorage["item3"] || ""; // default text
-
-  document.getElementById("item3").innerHTML =
-    localStorage["item3"] || ""; // default text
-
-    document.getElementById("item1input").value =
-  localStorage["item1input"] || ""; 
-
-document.getElementById("item2input").value =
-  localStorage["item2input"] || ""; 
-
-  document.getElementById("item3input").value =
-    localStorage["item3input"] || ""; 
 
 
 
