@@ -123,7 +123,7 @@ setInterval(function() {
   localStorage["item3input"] = document.getElementById("item3input").value; 
 
 
-}, 1000);
+}, 1);
 
 
 
