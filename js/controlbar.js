@@ -26,6 +26,22 @@ document.getElementById("item1name").value =
   document.getElementById("item2link").href =
   localStorage["item2input"] || ""; // 
 
+  
+
+
+
+  document.getElementById("item3name").value =
+  localStorage["item3name"] || ""; // 
+
+  document.getElementById("item3").innerHTML =
+  localStorage["item3"] || ""; // 
+
+  document.getElementById("item1input3").value =
+  localStorage["item3input"] || ""; // 
+
+  document.getElementById("item3link").href =
+  localStorage["item3input"] || ""; // 
+
 
 setInterval(function() {
 
@@ -38,6 +54,11 @@ setInterval(function() {
   localStorage["item2"] = document.getElementById("item2").innerHTML; // 
   localStorage["item2input"] = document.getElementById("item2input").value; // 
   localStorage["item2input"] = document.getElementById("item2link").href; // 
+
+  localStorage["item3name"] = document.getElementById("item3name").value; // 
+  localStorage["item3"] = document.getElementById("item3").innerHTML; // 
+  localStorage["item3input"] = document.getElementById("item3input").value; // 
+  localStorage["item3input"] = document.getElementById("item3link").href; // 
  
 }, 1000);
 
@@ -72,15 +93,35 @@ function save2(){
 
 }
 
+
+function save3(){
+  document.getElementById("item3").innerHTML = document.getElementById("item3name").value;
+  localStorage.setItem("item3name", document.getElementById("item3name").value);
+
+  localStorage["item3input"] = document.getElementById("item3input").value; // 
+  localStorage.setItem("item3input", document.getElementById("item3input").value);
+
+
+  localStorage["item3input"] = document.getElementById("item3link").href; // 
+  localStorage.setItem("item3input", document.getElementById("item3link").href);
+
+
+
+}
+
 function loaddata(){
   document.getElementById("item1").innerHTML = localStorage["item1name"]
   document.getElementById("item2").innerHTML = localStorage["item2name"]
+  document.getElementById("item3").innerHTML = localStorage["item3name"]
 
   document.getElementById("item1name").value = localStorage["item1name"]
   document.getElementById("item2name").value = localStorage["item2name"]
+  document.getElementById("item3name").value = localStorage["item3name"]
 
   document.getElementById("item1input").value = localStorage["item1input"]
   document.getElementById("item2input").value = localStorage["item2input"]
+  document.getElementById("item3input").value = localStorage["item3input"]
+
 }
 
 function openitem1(){
