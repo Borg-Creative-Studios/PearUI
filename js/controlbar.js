@@ -17,7 +17,7 @@ document.getElementById("item2input").value =
     localStorage["item3input"] || ""; 
 
 
-    
+
 
 function inputitems(){
     localStorage["item1input"] = document.getElementById("item1input").value; 
@@ -45,6 +45,7 @@ function setitem1() {
     document.getElementById("item1").innerHTML = y1;
 
     localStorage["item1name"] = document.getElementById("item1").innerHTML; // heading div
+    localStorage["item1name"] = document.getElementById("item1name").value;
   }
   function openitem1(){
     var z1 = document.getElementById("item1input").value;
@@ -72,6 +73,7 @@ function setitem2() {
     document.getElementById("item2").innerHTML = y2;
 
     localStorage["item2name"] = document.getElementById("item2").innerHTML; // heading div
+    localStorage["item2name"] = document.getElementById("item2name").value;
   }
   function openitem2(){
     var z2 = document.getElementById("item2input").value;
@@ -98,6 +100,7 @@ function setitem3() {
     document.getElementById("item3").innerHTML = y3;
 
     localStorage["item3name"] = document.getElementById("item3").innerHTML; // heading div
+    localStorage["item3name"] = document.getElementById("item3name").value;
   }
   function openitem3(){
     var z3 = document.getElementById("item3input").value;
@@ -121,12 +124,16 @@ setInterval(function() {
   localStorage["item2name"] = document.getElementById("item2").innerHTML; // content div
   localStorage["item3name"] = document.getElementById("item3").innerHTML; // content div
 
+  localStorage["item1name"] = document.getElementById("item1name").value; // heading div
+  localStorage["item2name"] = document.getElementById("item2name").value; // content div
+  localStorage["item3name"] = document.getElementById("item3name").value; // content div 
+
   localStorage["item1input"] = document.getElementById("item1input").value; 
   localStorage["item2input"] = document.getElementById("item2input").value; 
   localStorage["item3input"] = document.getElementById("item3input").value; 
 
 
-}, 1);
+}, 1000);
 
 
 
