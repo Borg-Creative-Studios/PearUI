@@ -61,6 +61,7 @@ function setitem1() {
   function openitem1(){
     var z1 = document.getElementById("item1input").value;
     
+    
     document.getElementById("appwindow").src = z1;
     console.log(x1)
     
