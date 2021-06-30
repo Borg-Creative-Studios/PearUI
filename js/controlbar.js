@@ -1,11 +1,11 @@
 document.getElementById("item1").innerHTML =
-  localStorage["item1"] || ""; // default text
+  localStorage["item1name"] || ""; // default text
 
 document.getElementById("item2").innerHTML =
-  localStorage["item3"] || ""; // default text
+  localStorage["item2name"] || ""; // default text
 
   document.getElementById("item3").innerHTML =
-    localStorage["item3"] || ""; // default text
+    localStorage["item3name"] || ""; // default text
 
     document.getElementById("item1input").value =
   localStorage["item1input"] || ""; 
@@ -28,6 +28,17 @@ function inputitems(){
 
     localStorage["item3input"] = document.getElementById("item3input").value; 
     localStorage["item3name"] = document.getElementById("item3").innerHTML;
+}
+
+function saveitems(){
+    document.getElementById("item1input").value = localStorage["item1input"]; 
+    document.getElementById("item1").innerHTML = localStorage["item1name"];
+
+    document.getElementById("item2input").value = localStorage["item2input"]; 
+    document.getElementById("item2").innerHTML = localStorage["item2name"];
+
+    document.getElementById("item3input").value = localStorage["item3input"]; 
+    document.getElementById("item3").innerHTML = localStorage["item3name"];
 }
 
 
