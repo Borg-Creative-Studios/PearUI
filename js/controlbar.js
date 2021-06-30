@@ -25,21 +25,21 @@ function setitem1() {
 
 
 function setitem2() {
-    var x = document.getElementById("item2input").value;
+    var xx = document.getElementById("item2input").value;
     
     localStorage["item2"] = document.getElementById("item2").innerHTML; // heading div
     localStorage["item2input"] = document.getElementById("item2input").value; 
   }
 
   function setitem2name() {
-    var y = document.getElementById("item2name").value;
-    document.getElementById("item2").innerHTML = y;
+    var yy = document.getElementById("item2name").value;
+    document.getElementById("item2").innerHTML = yy;
   }
   function openitem2(){
-    var z = document.getElementById("item2input").value;
+    var zz = document.getElementById("item2input").value;
     
-    document.getElementById("appwindow").src = z;
-    console.log(x)
+    document.getElementById("appwindow").src = zz;
+    console.log(xx)
     
 }
 
@@ -50,21 +50,21 @@ function setitem2() {
 
 
 function setitem3() {
-    var x = document.getElementById("item3input").value;
+    var xxx = document.getElementById("item3input").value;
     
     localStorage["item3"] = document.getElementById("item3").innerHTML; // heading div
     localStorage["item3input"] = document.getElementById("item3input").value; 
   }
 
   function setitem3name() {
-    var y = document.getElementById("item3name").value;
-    document.getElementById("item3").innerHTML = y;
+    var yyy = document.getElementById("item3name").value;
+    document.getElementById("item3").innerHTML = yyy;
   }
   function openitem3(){
-    var z = document.getElementById("item3input").value;
+    var zzz = document.getElementById("item3input").value;
     
-    document.getElementById("appwindow").src = z;
-    console.log(x)
+    document.getElementById("appwindow").src = zzz;
+    console.log(xxx)
     
 }
 /*document.getElementById("item1").href = x;*/
@@ -83,7 +83,7 @@ document.getElementById("item2").innerHTML =
   localStorage["item1input"] || ""; 
 document.getElementById("item2input").value =
   localStorage["item2input"] || ""; 
-  document.getElementById("item2input").value =
+  document.getElementById("item3input").value =
     localStorage["item3input"] || ""; 
 
 
