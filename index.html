@@ -42,7 +42,11 @@
 <p>Item 1 path</p>
 <input type="text" id="item1name" placeholder="App name" value="">
 <input type="text" id="item1input" placeholder="URL or file path" value="">
-<button onclick=" save1(), hidesettings(),settingsbuttonhide2(),settingsbuttonshow1()">SAVE</button>
+<button onclick=" save1()">SAVE</button>
+<p>Item 2 path</p>
+<input type="text" id="item2name" placeholder="App name" value="">
+<input type="text" id="item2input" placeholder="URL or file path" value="">
+<button onclick=" save2()">SAVE</button>
 
 
 
@@ -54,6 +58,7 @@
 <footer><div id="controlbar"><span class="pn_s" id="version">v: 1.0.0a</span> 
     
     <span><button class="baritem" onclick="gohome(), inputheight();"><img src="./icons/home.svg" height="20px" alt=""></button></span>  
+    <span><button class="baritem" onclick="inputheight(), loaddata();"><img src="./icons/data.svg" height="20px" alt=""></button></span>   
 
     <span><button class="baritem" onclick="inputheight();"><img src="./icons/size.svg" height="20px" alt=""></button></span>   
 
@@ -63,7 +68,10 @@
     <span ><button class="baritembutton" onclick="openauthor(); inputheight();">Author</button></span>
 
     <span ><button id="item1" class="baritembutton"  onclick="openitem1(), inputheight();"></button></span>
-   <!-- <span ><button class="baritembutton" id="item2" onclick="openitem2(), inputheight();"></button></span>
+
+
+    <span ><button id="item2" class="baritembutton"  onclick="openitem2(), inputheight();"></button></span>
+    <!-- <span ><button class="baritembutton" id="item2" onclick="openitem2(), inputheight();"></button></span>
     <span ><button class="baritembutton" id="item3" onclick="openitem3(), inputheight();"></button></span>-->
 
 </div></footer>
