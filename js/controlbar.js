@@ -122,6 +122,10 @@ function loaddata(){
   document.getElementById("item2input").value = localStorage["item2input"]
   document.getElementById("item3input").value = localStorage["item3input"]
 
+  document.getElementById("link1").href = localStorage["item1input"]
+  document.getElementById("link2").href = localStorage["item2input"]
+  document.getElementById("link3").href = localStorage["item3input"]
+
 }
 
 function openitem1(){

@@ -6,7 +6,7 @@
 }
 
 #controlbar{
-    background-color: white;
+    background-color: #1F1E2C;
     position: absolute;
     bottom: 0px;
     padding: 10px;
@@ -54,3 +54,50 @@
     border-radius: 3px;
     padding: 4px;
 }
+
+
+
+
+.btn{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FFFC67;
+    border-style: solid;
+    border-color: #FFFC67;
+    border-radius: 5px;
+    color: #1a1a1a;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F9E231;
+    border-style: solid;
+    border-color: #F9E231;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #cecece;
+    color: #1a1a1a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+
+}
+.btn:active{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-color: #FFFC67;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #1a1a1a;
+    color: #1a1a1a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+
+}
+
