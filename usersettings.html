@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./main.css" rel="stylesheet">
+<!--JazzBlocksQ Beta Resources-->
+
+<link href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/JazzBlocksQ.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+<!--end-->
+
+<!--JazzBlocks Divided required code-->
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
+<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
+<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+<!--end-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pear OS</title>
+
+</head>
+
+<header>
+    <div id="menu"><h3 class="pn_m">Pear OS</h3></div>
+
+</header>
+
+<body onload="findheight(), hidesettings()">
+    <center><embed class="appwindow" height="" id="appwindow" src="./internal/myhome.html" type=""></center>
+</body>
+
+
+
+
+
+<div id="controlbarsettings"><h4 class="pn_m">Control Bar Settings</h4>
+<p>Item 1 path</p>
+<input type="text" id="item1name" placeholder="App name" value="">
+<input type="text" id="item1input" placeholder="URL or file path" value="">
+<button onclick=" save1()">SAVE</button>
+<p>Item 2 path</p>
+<input type="text" id="item2name" placeholder="App name" value="">
+<input type="text" id="item2input" placeholder="URL or file path" value="">
+<button onclick=" save2()">SAVE</button>
+<p>Item 3 path</p>
+<input type="text" id="item3name" placeholder="App name" value="">
+<input type="text" id="item3input" placeholder="URL or file path" value="">
+<button onclick=" save3()">SAVE</button>
+
+
+
+
+
+
+</div>
+
+<footer><div id="controlbar"><span class="pn_s" id="version">v: 1.0.0a</span> 
+    
+    <span><button class="baritem" onclick="gohome(), inputheight();"><img src="./icons/home.svg" height="20px" alt=""></button></span>  
+    <span><button class="baritem" onclick="inputheight(), loaddata();"><img src="./icons/data.svg" height="20px" alt=""></button></span>   
+
+    <span><button class="baritem" onclick="inputheight();"><img src="./icons/size.svg" height="20px" alt=""></button></span>   
+
+    <span><button id="settingsbutton1" class="baritem" onclick="showsettings(), settingsbuttonhide1(), settingsbuttonshow2()"><img src="./icons/settings.svg" height="20px" alt=""></button></span>      
+    <span><button style="visibility: hidden;" id="settingsbutton2" class="baritem" onclick="hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()""><img src="./icons/settings.svg" height="20px" alt=""></button></span>      
+
+    <span ><button class="baritembutton" onclick="openauthor(); inputheight();">Author</button></span>
+
+    <span ><button id="item1" class="baritembutton"  onclick="openitem1(), inputheight();"></button></span>
+
+
+    <span ><button id="item2" class="baritembutton"  onclick="openitem2(), inputheight();"></button></span>
+
+    <span ><button id="item3" class="baritembutton"  onclick="openitem3(), inputheight();"></button></span>
+    <!-- <span ><button class="baritembutton" id="item2" onclick="openitem2(), inputheight();"></button></span>
+    <span ><button class="baritembutton" id="item3" onclick="openitem3(), inputheight();"></button></span>-->
+
+</div></footer>
+
+
+
+<script src="./js/pearcommands.js"></script>
+<script src="./js/mainappcommands.js"></script>
+<script src="./js/window.js"></script>
+<script src="./js/controlbar.js"></script>
+</html>

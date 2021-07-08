@@ -144,6 +144,16 @@ function openitem2(){
   
 }
 
+function openitem3(){
+  var z3 = document.getElementById("item3input").value;
+  
+  
+  document.getElementById("appwindow").src = z3;
+  console.log(x1)
+  
+  
+}
+
 
 
 function showsettings(){
