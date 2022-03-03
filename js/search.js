@@ -1,17 +1,20 @@
+var searchengine = "https://duckduckgo.com/?q="
+
+
+
 function go(){
     var searchcontent = document.getElementById("searchfield").value
 
     let searchtype = searchcontent.includes("https://", "http://")
 
-    if (searchtype = true) {
+    if (searchcontent.includes("https://", "http://")) {
         //  block of code to be executed if the condition is true
         window.location.href = searchcontent
-
-      } else {
-        //  block of code to be executed if the condition is false
-        window.location.href = "https://duckduckgo.com/?q="+searchcontent
-
+        console.log(searchcontent)
+      }else{
+        window.location.href = searchengine+searchcontent
       }
+
 
 
 }
