@@ -56,7 +56,19 @@
 }
 
 
-
+.input{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1a1a1a;
+    border-style: solid;
+    border-color: #FFFC67;
+    border-radius: 5px;
+    color: #FFFC67;
+    margin-right: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
 
 .btn{
     padding: 2mm;
