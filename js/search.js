@@ -18,3 +18,7 @@ function go(){
 
 
 }
+
+function clearsearch(){
+    document.getElementById("searchfield").value = ''
+}

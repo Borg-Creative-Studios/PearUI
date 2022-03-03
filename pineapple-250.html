@@ -20,9 +20,30 @@
     <!--<center> <img width="150px" src="./icons/pineapple_slice.png" alt=""> </center>-->
 
 </header>
+<p style="padding: 10px;"></p>
 
-<body onload="loaddata(), findheight(), hidesettings()">
-    <center><embed class="appwindow" height="" id="appwindow" src="./internal/fruityhome.html" type=""></center>
+<body onload="loaddata(), findheight(), hidesettings(), clearsearch()">
+    <script src="./js/search.js"></script>
+
+    
+    <center>
+        <div id="searcharea"><input  id="searchfield" class="input" type="text" value="" content="" placeholder='Search...'><button onclick="go()" id="searched" class="btn">go</button></div>
+
+       <!-- <embed class="appwindow" height="" id="appwindow" src="./internal/fruityhome.html" type="">-->
+        
+        </center>
+        <script>
+            var input = document.getElementById("searchfield");
+            input.addEventListener("keyup", function(event) {
+              // Number 13 is the "Enter" key on the keyboard
+              if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                document.getElementById("searched").click();
+              }
+            }); 
+                        </script>
 </body>
 
 
@@ -50,7 +71,7 @@
 
 </div>
 
-<footer><div id="controlbar"><span style="color:white;" class="pn_s" id="version">page v: 1.0.0a</span>
+<footer><div id="controlbar"><span style="color:white;" class="pn_s" id="version">page v: 1.1.0a</span>
     <span><a href="https://dev.borgcreative.com/"><button class="btn" class="baritem"><img src="./icons/paperclip.svg" height="20px" alt=""></button></a></span>
 
    <!--<span><button class="btn" class="baritem" onclick="gohome(), inputheight();"><img src="./icons/home.svg" height="20px" alt=""></button></span>  -->
