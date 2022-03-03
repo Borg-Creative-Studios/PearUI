@@ -25,10 +25,24 @@
 
 <script src="./js/search.js"></script>
     <center>
-        <div id="searcharea"><input  id="searchfield" class="input" type="text" value="" content="" placeholder='Search...'><button onclick="go()" class="btn">go</button></div>
+        <div id="searcharea"><input  id="searchfield" class="input" type="text" value="" content="" placeholder='Search...'><button onclick="go()" id="searched" class="btn">go</button></div>
         
         <!--<embed class="appwindow" height="" id="appwindow" src="./internal/fruityhome.html" type="">--> </center>
-</body>
+
+            <script>
+var input = document.getElementById("searchfield");
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("searched").click();
+  }
+}); 
+            </script>
+
+        </body>
 
 
 
