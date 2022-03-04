@@ -1,3 +1,4 @@
+
 document.getElementById("item1name").value =
   localStorage["item1name"] || ""; // 
 
@@ -59,7 +60,8 @@ setInterval(function() {
   localStorage["item3"] = document.getElementById("item3").innerHTML; // 
   localStorage["item3input"] = document.getElementById("item3input").value; // 
   localStorage["item3input"] = document.getElementById("item3link").href; // 
- 
+
+
 }, 1000);
 
 
@@ -108,6 +110,8 @@ function save3(){
 
 
 }
+
+
 
 function loaddata(){
   document.getElementById("item1").innerHTML = localStorage["item1name"]

@@ -2,8 +2,11 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #1a1a1a;">
 <head>
+    <link href="./main.css" rel="preload">
     <link href="./main.css" rel="stylesheet">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+        </style> 
 
 
 
@@ -48,7 +51,7 @@ input.addEventListener("keyup", function(event) {
 
 
 
-<div id="controlbarsettings"><h4 class="pn_m">Fast Action Bar Settings</h4>
+<div id="controlbarsettings" style="background-color: black; color: white;"><h4 class="pn_m">Fast Action Bar Settings</h4>
 <p>Item 1</p>
 <input spellcheck="false" type="text" id="item1name" placeholder="App name" value="">
 <input spellcheck="false" type="text" id="item1input" placeholder="URL or file path" value="">
@@ -62,6 +65,17 @@ input.addEventListener("keyup", function(event) {
 <input spellcheck="false" type="text" id="item3input" placeholder="URL or file path" value="">
 <button onclick=" save3()">SAVE</button>
 
+<p style="margin-top: 10px;">Search Engine</p>
+<p style="font-size: 10px;">Temporarily change search engines</p>
+
+<button onclick=" qwant(), hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()">Qwant</button>
+<button onclick=" google(), hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()">Google</button>
+<button onclick=" bing(), hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()">Bing</button>
+
+<p>Default</p>
+<button onclick=" duckduckgo(), hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()">DuckDuckGo</button>
+
+
 
 
 
@@ -69,7 +83,7 @@ input.addEventListener("keyup", function(event) {
 
 </div>
 
-<footer><div id="controlbar"><span style="color:white;" class="pn_s" id="version">page v: 1.1.0a</span>
+<footer><div id="controlbar"><span style="color:white;" class="pn_s" id="version">page v: 1.2.0a</span>
     <span><a href="https://dev.borgcreative.com/"><button class="btn" class="baritem"><img src="./icons/paperclip.svg" height="20px" alt=""></button></a></span>
 
    <!--<span><button class="btn" class="baritem" onclick="gohome(), inputheight();"><img src="./icons/home.svg" height="20px" alt=""></button></span>  -->
@@ -78,7 +92,7 @@ input.addEventListener("keyup", function(event) {
     <!--<span><button class="btn" class="baritem" onclick="inputheight();"><img src="./icons/size.svg" height="20px" alt=""></button></span>  -->
 
     <span><button class="btn" id="settingsbutton1" class="baritem" onclick="showsettings(), settingsbuttonhide1(), settingsbuttonshow2()"><img src="./icons/settings.svg" height="20px" alt=""></button></span>
-    <span><button class="btn" style="visibility: hidden;" id="settingsbutton2" class="baritem" onclick="hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()""><img src="./icons/settings.svg" height="20px" alt=""></button></span>
+    <span><button class="btn" style="visibility: hidden;" id="settingsbutton2" class="baritem" onclick="hidesettings(), settingsbuttonhide2(), settingsbuttonshow1()"><img src="./icons/settings.svg" height="20px" alt=""></button></span>
 
     <span ><a href="https://author.borgcreative.com/?utm_term=editor"><button class="btn" class="baritembutton" onclick="openauthor(); inputheight();">Author</button></a></span>
 
