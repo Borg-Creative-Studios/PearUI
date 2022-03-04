@@ -88,7 +88,7 @@ function qwant(){
   }
 
   function bing(){
-    document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id="searchfield" class="binput" type="text" value="" content="" placeholder="Search Qwant or enter URL..."><button onclick="gob()" id="searched" class="bbtn">go</button>'
+    document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id="searchfield" class="binput" type="text" value="" content="" placeholder="Search Bing or enter URL..."><button onclick="gob()" id="searched" class="bbtn">go</button>'
     
     
     
