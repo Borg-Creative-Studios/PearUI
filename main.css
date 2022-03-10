@@ -227,6 +227,65 @@
 
 }
 
+.minput{
+    width: 40%;
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1a1a1a;
+    border-style: solid;
+    border-color: #7abb3b;
+    border-radius: 5px;
+    color: #7abb3b;
+    margin-right: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+.mbtn{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #7abb3b;
+    border-style: solid;
+    border-color: #7abb3b;
+    border-radius: 5px;
+    color: #723a93;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+.mbtn:hover{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #723a93;
+    border-style: solid;
+    border-color: #7abb3b;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #7abb3b;
+    color: #1a1a1a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+
+}
+.mbtn:active{
+    padding: 2mm;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-color: #723a93;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #1a1a1a;
+    color: #7abb3b;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+
+}
+
+
 .qbtn{
     padding: 2mm;
     font-size: 15px;

@@ -2,6 +2,7 @@ let searchengine = "https://duckduckgo.com/?q="
 let googlesearch = "https://www.google.com/?q="
 let qwantsearch = "https://www.qwant.com/?q="
 let bingsearch = "https://www.bing.com/?q="
+let mojeeksearch = "https://www.mojeek.com/search?q="
 
 
 function go(){
@@ -20,6 +21,24 @@ function go(){
 
 
 }
+
+function gom(){
+  var searchcontent = document.getElementById("searchfield").value
+
+  let searchtype = searchcontent.includes("https://", "http://")
+
+  if (searchcontent.includes("https://", "http://")) {
+      //  block of code to be executed if the condition is true
+      window.location.href = searchcontent
+      console.log(searchcontent)
+    }else{
+      window.location.href = mojeeksearch+searchcontent
+    }
+
+
+
+}
+
 function gog(){
   var searchcontent = document.getElementById("searchfield").value
 
@@ -79,6 +98,14 @@ document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id
 
 
 }
+
+
+function mojeek(){
+  document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id="searchfield" class="minput" type="text" value="" content="" placeholder="Search Mojeek or enter URL..."><button onclick="gom()" id="searched" class="mbtn">go</button>'
+  
+  
+  
+  }
 
 function qwant(){
   document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id="searchfield" class="qinput" type="text" value="" content="" placeholder="Search Qwant or enter URL..."><button onclick="goq()" id="searched" class="qbtn">go</button>'
