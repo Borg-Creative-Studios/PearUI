@@ -1,8 +1,10 @@
 let searchengine = "https://duckduckgo.com/?q="
+let duckduckgosearch = "https://duckduckgo.com/?q="
 let googlesearch = "https://www.google.com/?q="
 let qwantsearch = "https://www.qwant.com/?q="
 let bingsearch = "https://www.bing.com/?q="
 let mojeeksearch = "https://www.mojeek.com/search?q="
+let startpagesearch = "https://www.startpage.com/sp/search?query="
 
 
 function go(){
@@ -17,6 +19,40 @@ function go(){
       }else{
         window.location.href = searchengine+searchcontent
       }
+
+
+
+}
+
+function goddg(){
+  var searchcontent = document.getElementById("searchfield").value
+
+  let searchtype = searchcontent.includes("https://", "http://")
+
+  if (searchcontent.includes("https://", "http://")) {
+      //  block of code to be executed if the condition is true
+      window.location.href = searchcontent
+      console.log(searchcontent)
+    }else{
+      window.location.href = duckduckgosearch+searchcontent
+    }
+
+
+
+}
+
+function gos(){
+  var searchcontent = document.getElementById("searchfield").value
+
+  let searchtype = searchcontent.includes("https://", "http://")
+
+  if (searchcontent.includes("https://", "http://")) {
+      //  block of code to be executed if the condition is true
+      window.location.href = searchcontent
+      console.log(searchcontent)
+    }else{
+      window.location.href = startpagesearch+searchcontent
+    }
 
 
 
@@ -127,6 +163,13 @@ function qwant(){
       
       
       }
+
+      function startpage(){
+        document.getElementById('searcharea').innerHTML = '<input spellcheck="false"  id="searchfield" class="sinput" type="text" value="" content="" placeholder="Search Startpage or enter URL..."><button onclick="gos()" id="searched" class="sbtn">go</button>'
+        
+        
+        
+        }
 
 function clearsearch(){
     document.getElementById("searchfield").value = ''
